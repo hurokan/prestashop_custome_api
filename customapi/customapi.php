@@ -5,7 +5,7 @@ if (!defined('_PS_VERSION_')) {
     exit;
 }
 include_once (_PS_MODULE_DIR_.'/customapi/classes/OrderDetailed.php');
-include_once (_PS_MODULE_DIR_.'/customapi/classes/ProductDetailed.php');
+include_once (_PS_MODULE_DIR_.'/customapi/classes/CategoryDetailed.php');
 include_once (_PS_MODULE_DIR_.'/customapi/classes/UpdateStatus.php');
 
 class customapi extends Module
@@ -47,9 +47,9 @@ class customapi extends Module
             'class' => 'UpdateStatus'
         ];
 
-        $added_resources['productdetailed'] = [
-            'description' => 'product categories information',
-            'class' => 'ProductDetailed'
+        $added_resources['custom_category_detailed'] = [
+            'description' => 'Custom categories information',
+            'class' => 'CategoryDetailed'
         ];
 
 
